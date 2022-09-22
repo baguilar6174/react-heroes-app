@@ -1,10 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { HeroesApp } from "./HeroesApp";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+import { HeroesApp } from './HeroesApp';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<HeroesApp />
+		<BrowserRouter>
+			<HeroesApp />
+		</BrowserRouter>
 	</React.StrictMode>
 );
