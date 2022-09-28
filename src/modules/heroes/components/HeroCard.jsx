@@ -12,7 +12,7 @@ export const HeroCard = ({
 	const heroImageUrl = `/src/assets/heroes/${id}.jpg`;
 
 	return (
-		<div className='col-12 col-md-3'>
+		<div className='col-12'>
 			<div className='card'>
 				<div className='row no-gutters'>
 					<div className='col-4'>
