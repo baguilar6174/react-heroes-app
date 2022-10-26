@@ -12,23 +12,17 @@ export const HeroCard = ({
 	const heroImageUrl = `/src/assets/heroes/${id}.jpg`;
 
 	return (
-		<div className='col-12'>
-			<div className='card'>
-				<div className='row no-gutters'>
-					<div className='col-4'>
-						<img className='card-img' src={heroImageUrl} alt={superhero} />
-					</div>
-					<div className='col-8'>
-						<div className='card-body'>
-							<h5 className='card-title'>{superhero}</h5>
-							<p className='card-text'>{alterEgo}</p>
-							{alterEgo !== characters && <p>{characters}</p>}
-							<p className='card-text'>
-								<small className='text-mute'>{firstAppearance}</small>
-							</p>
-							<Link to={`/hero/${id}`}>More information...</Link>
-						</div>
-					</div>
+		<div className='col'>
+			<div className='card h-100'>
+				<img className='card-img-top' src={heroImageUrl} alt={superhero} />
+				<div className='card-body'>
+					<h5 className='card-title'>{superhero}</h5>
+					<p className='card-text'>{alterEgo}</p>
+					{alterEgo !== characters && <p>{characters}</p>}
+					<p className='card-text'>
+						<small className='text-mute'>{firstAppearance}</small>
+					</p>
+					<Link to={`/hero/${id}`}>More information...</Link>
 				</div>
 			</div>
 		</div>
