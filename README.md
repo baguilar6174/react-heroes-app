@@ -53,6 +53,12 @@ Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 - Context
 - Reducer
 - Custom Hooks
+- Testing on private and public routes
+- MemoryRouter
+- Tests on our DashboardRouter
+- Testing in the AppRouter
+- Simulate URLs and segments
+- Simulating queryParams and queryStrings
 
 ## Project status
 
